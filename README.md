@@ -39,7 +39,7 @@ que a escolha de arquitetura foi pensada, não copiada do tutorial sem questiona
 ## Estrutura
 
 ```
-case-study/
+./
 ├── README.md                              (este arquivo)
 ├── requirements.txt                       (deps leves, sem GPU)
 ├── src/
@@ -53,8 +53,11 @@ case-study/
 ## Como rodar (dentro do Codespace do repositório)
 
 ```bash
-cd case-study
+# na raiz deste repositório
+pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
+# dataset (mesmo train.csv do repo original, ~32 MB, não versionado aqui)
+curl -L -o train.csv https://raw.githubusercontent.com/dgodevais/coursera-genai-for-data-science/main/train.csv
 ```
 
 Depois abra `notebooks/01_finetune_lightweight.ipynb` e rode célula a célula

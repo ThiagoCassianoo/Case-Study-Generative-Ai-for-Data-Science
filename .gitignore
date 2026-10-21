@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Case study — artefatos gerados / dado baixado
+models/
+train.csv

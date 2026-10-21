@@ -1,0 +1,10 @@
+# CPU-only. Em Linux/Codespaces, instale o torch CPU primeiro pra não baixar CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+transformers==5.20.2
+datasets==5.1.0
+accelerate==1.15.0
+scikit-learn==1.9.1
+pandas==3.0.5
+nbconvert==7.17.2
+ipykernel
